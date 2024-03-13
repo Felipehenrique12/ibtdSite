@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #form-container {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #form-container iframe {
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="open-form-button">Abrir formulário</button>
+    <div id="form-container" style="display: none;">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSezWAJSAwhO02YLuGlY2CXR3ouHMXFAj2l0KeiqxJo6YOZ6xQ/viewform?embedded=true" width="700" height="520" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#open-form-button').click(function() {
+                $('#form-container').show();
+            });
+        });
+    </script>
+</body>
+</html>

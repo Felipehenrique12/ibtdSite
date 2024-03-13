@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<link rel="icon" href="imagens/favicon_ibtd.ico" type="image/x-icon">
+<link rel="stylesheet" href="css/estilo.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Templo de Deus</title>
+
+</head>
+
+<body>
+    <div>
+        <section>
+            <header class="cabecas">
+                <div class="cabeca">
+                    <img class="logo" src="imagens/logo_redondo.png" alt="logo_ibtd" height="100px" width="100px"
+                        style="margin-top: 20px;">
+                </div>
+                <div class="cabeca">
+                    <h1>Igreja Batista Templo de Deus</h1>
+                </div>
+                <div class="cabeca">
+                    <nav class="cabecalho" style="margin-top: 40px;">
+                        <ul>
+                            <li><strong><a href="index.html">Home</a></strong></li>
+                            <li><strong><a href='quemsomos.html'>Quem Somos</a></strong></li>
+                            <li><strong><a href="ministerios.html">Ministérios</a></strong></li>
+                            <li><strong><a href="eventos.html">Eventos</a></strong></li>
+                            <li><strong><a href="contatos.html" style="color: rgb(7, 48, 186);">Contato</a></strong>
+                            </li>
+                        </ul>
+                </div>
+            </header>
+        </section>
+
+
+    </div>
+
+   
+    </nav>
+    <main>
+
+        <section class="form-container" style="display: block; margin: 0 auto;">
+            </form>
+            </div> <!--container-->
+            <div class="fomr1" style="display: block; margin: 0 auto;">
+                <section class="form-container" style="display: block; margin: 0 auto;">
+                    <div class="container" style="display: block; margin: 0 auto;">
+                        <form class="caixa_form" method="post" action="envia.php">
+                            <h1>Entre em contato</h1>
+                            <p>Preencha o formulário abaixo e entraremos em contato com você</p>
+
+                            <div class="input-single">
+                                <input class="input" type="text" id="nome" name="nome" required autocomplete="off">
+                                <label for="nome">Seu nome completo</label>
+                            </div>
+
+                            <div class="input-single">
+                                <input class="input" type="text" id="email" name="email" required autocomplete="off">
+                                <label for="email">Seu e-mail</label>
+                            </div>
+
+                            <div class="input-single">
+                                <input class="input" type="text" id="telefone" name="telefone" required
+                                    autocomplete="off">
+                                <label for="telefone">Seu telefone</label>
+                            </div>
+
+                            <div class="input-single">
+                                <textarea class="form-control" type="text" id="mensagem" name="mensagem" rows="3"
+                                    style="width: 510px; height: 121.63px;" required autocomplete="off"
+                                    oninput="checkLabel()"></textarea>
+                                <label for="mensagem" id="mensagem-label"> Digite sua mensagem</label>
+                            </div>
+                            <div class="btn">
+                                <input type="submit" value="Enviar">
+                            </div>
+                        </form>
+                    </div><!--container-->
+                </section>
+            </div>
+            <script>
+                function checkLabel() {
+                    var mensagem = document.getElementById('mensagem');
+                    var label = document.getElementById('mensagem-label');
+
+                    if (mensagem.value.trim() !== '') {
+                        label.style.display = 'none';
+                    } else {
+                        label.style.display = 'block';
+                    }
+                }
+            </script>
+            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.1/dist/umd/popper.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script
+                src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.5/jquery.inputmask.min.js"></script>
+            <script>
+                $(document).ready(function () {
+                    $('#telefone').inputmask('(99)9.9999-9999');
+                });
+            </script>
+        </section>
+        </div>
+    </main>
+</body>
+
+</html>

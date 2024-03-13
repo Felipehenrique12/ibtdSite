@@ -1,0 +1,234 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #408cd3;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    margin-top: 5px;
+    color: #f1f5f1;
+    text-decoration: none;
+}
+
+main {
+    padding: 1rem;
+}
+
+
+
+.pillars {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pillar {
+    background-color: #f9f9f9;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* inic. cabeçalho */
+.cabecas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cabeca {
+    background-color: #408cd3;
+    padding: 1rem;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.cabeca h1 {
+    font-size: 36px;
+    /* Tamanho da fonte desejado */
+}
+
+.cabecalho {
+    margin-top: 60PX;
+    font-size: 15px;
+    /* Tamanho da fonte desejado */
+
+}
+
+.logo {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    margin-top: 7px;
+   /*  height: 150px;
+    width: 150px; */
+}
+
+/* fim cabeçalho */
+
+
+.img-igreja {
+    margin-left: 50px;
+}
+
+.donate {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+
+
+.historia {
+    text-align: center;
+    justify-content: space-between
+}
+
+.conta-hist {
+    margin-top: 5px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+/* FORMULARIO  */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 6%;
+    display: block;
+    margin: 0 auto;
+}
+
+form {
+    background: rgba(196, 194, 194, 0.418);
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+form h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #2D5966;
+    font-size: 22pt;
+}
+
+form p {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form .input-single {
+    position: relative;
+    margin: 30px 0;
+}
+
+form .input-single label {
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    cursor: text;
+    transition: all 0.5s;
+    color: #808080;
+}
+
+form .input-single .input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #808080;
+    padding: 5px;
+    outline: 0;
+    font-size: 16px;
+}
+
+form .input-single .input:focus {
+    border-bottom: 2px solid #2D5966;
+}
+
+form .input-single .input:focus~label,
+form .input-single .input:valid~label {
+    transform: translateY(-20px);
+    font-size: 12px;
+    color: #2D5966;
+}
+
+.btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 7px;
+}
+
+form input[type=submit] {
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color: #408cd3;
+    color: rgb(221, 218, 218);
+    font-size: 14pt;
+    cursor: pointer;
+}
+
+.caixa_form {
+    height: 550px;
+}
+
+/* atualização de cadastro */
+
+#form-google {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: block; margin: 0 auto;
+}
+
+#form-container iframe {
+    border: none;
+}
+
+.google-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/*  novo slide */
+
+@import url('http://fonts.googleapis.com/css2?family-Poppins:wght@300,400,500,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.card-image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    
+}

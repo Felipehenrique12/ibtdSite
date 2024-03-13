@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swiper Example</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<head>
+  <div>
+    <div>
+      <section>
+        <header class="cabecas">
+          <div class="cabeca">
+            <img class="logo" src="imagens/logo_redondo.png" alt="logo_ibtd" height="100px" width="100px">
+          </div>
+          <div class="cabeca">
+            <h1>Igreja Batista Templo de Deus</h1>
+          </div>
+          <div class="cabeca">
+            <nav class="cabecalho" style="margin-top: 40px;">
+              <ul>
+                <li><strong><a href="index.html">Home</a></strong></li>
+                <li><strong><a href='quemsomos.html' style="color: rgb(7, 48, 186);">Quem Somos</a></strong></li>
+                <li><strong><a href="ministerios.html">Ministérios</a></strong></li>
+                <li><strong><a href="eventos.html">Eventos</a></strong></li>
+                <li><strong><a href="contatos.html">Contato</a></strong></li>
+              </ul>
+          </div>
+        </header>
+      </section>
+    </div>
+</head>
+
+<body>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <!-- <div class="swiper-slide"><img src="https://i.ibb.co/qpp4ydF/image.png" alt="Foto 1"
+          style="width: 1854px; height: 722px;"></div> -->
+      <div><iframe width="1854px" height="722px"
+          src="https://www.youtube.com/embed/qOO6lVMhmGc?si=c22LTDlJ_sdKGL1P&amp;controls=0"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe></div>
+      <div class="swiper-slide"><img src="https://i.ibb.co/qpp4ydF/image.png" alt="Foto 1"
+          style="width: 1854px; height: 722px;"></div>
+      <div class="swiper-slide"><img src="https://i.ibb.co/8rsxwJ9/image.png" alt="Foto 2"
+          style="width: 1854px; height: 722px;"></div>
+      <div class="swiper-slide"><img src="https://i.ibb.co/QJzqJp0/image.png" alt="Foto 3"
+          style="width: 1854px; height: 722px;"></div>
+      <div><iframe width="1854px" height="722px " src="https://www.youtube.com/embed/qOO6lVMhmGc?si=c22LTDlJ_sdKGL1P"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen></iframe></div>
+      <!-- Add more slides as needed -->
+    </div>
+  </div>
+  <main>
+
+    <section class="pillars">
+      <div class="pillar">
+        <h3>Eletrodomésticos</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+      <div class="pillar">
+        <h3>Colchões</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+      <div class="pillar">
+        <h3>Roupas</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <main>
+
+    <section class="pillars">
+      <div class="pillar">
+        <h3>Eletrodomésticos2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+      <div class="pillar">
+        <h3>Colchões2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+      <div class="pillar">
+        <h3>Roupas2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in tellus a lectus.</p>
+      </div>
+    </section>
+
+  </main>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var swiper = new Swiper('.swiper-container', {
+        autoplay: {
+          delay: 5000,
+        },
+      });
+    });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Feriados</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: rgb(214, 210, 210); */
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .meses {
+            display: flex;
+            flex-direction: column;
+        }
+
+        button {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: none;
+            background-color: #1366d2;
+            /* cor de fundo */
+            color: white;
+            /* cor do texto */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+
+        }
+
+        button:hover {
+            background-color: #45a049;
+            /* cor de fundo ao passar o mouse */
+        }
+
+        .feriados {
+            border: 1px solid #ccc;
+            /* borda da div */
+            padding: 20px;
+            height: 800px;
+            width: 800px;
+       
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="meses" id="meses">
+            <button id="janeiro">janeiro</button>
+            <button id="fevereiro">Fevereiro</button>
+            <button id="marco">Março</button>
+            <button id="abril">Abril</button>
+            <button id="maio">Maio</button>
+            <button id="junho">Junho</button>
+            <button id="julho">Julho</button>
+            <button id="agosto">Agosto</button>
+            <button id="setembro">Setembro</button>
+            <button id="outubro">Outubro</button>
+            <button id="novembro">Novembro</button>
+            <button id="dezembro">Dezembro</button>
+            <!-- Adicione botões para os outros meses -->
+        </div>
+        <div class="feriados">
+            <!-- Aqui serão exibidos os feriados ao clicar nos botões -->
+        </div>
+    </div>
+
+    <script>
+        // Array de feriados (exemplo)
+        const feriados = {
+            janeiro: ["01/01 - Confraternização Mundial", "25/01 - Aniversário de São Paulo"],
+            fevereiro: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            março: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            abril: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            maio: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            junho: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            julho: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            agosto: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            setembro: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            outubro: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            novembro: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            dezembro: ["02/02 - Dia de Iemanjá", "25/02 - Carnaval"],
+            // Adicione os feriados para os outros meses
+        };
+
+        // Função para exibir os feriados ao clicar no botão
+        function exibirFeriados(mes) {
+            const divFeriados = document.querySelector('.feriados');
+
+            // Limpa a div dos feriados
+            divFeriados.innerHTML = "";
+
+            // Verifica se há feriados para o mês selecionado
+            if (feriados[mes]) {
+                feriados[mes].forEach(feriado => {
+                    const p = document.createElement('p');
+                    p.textContent = feriado;
+                    divFeriados.appendChild(p);
+                });
+            } else {
+                const p = document.createElement('p');
+                p.textContent = "Não há feriados neste mês";
+                divFeriados.appendChild(p);
+            }
+        }
+    </script>
+</body>
+
+</html>
